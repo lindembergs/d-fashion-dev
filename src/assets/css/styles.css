@@ -6,6 +6,7 @@
 
 html,
 body {
+  font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
   width: 100%;
   height: 100%;
@@ -40,4 +41,43 @@ a {
   display: flex;
   align-items: center;
   gap: 3rem;
+}
+
+main .sales {
+  background-image: url("../img/gradient.svg"), url("../img/capa.svg");
+  width: 100%;
+  height: 708px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.percent-off {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20%;
+}
+
+.percent-off h1 {
+  font-size: 148px;
+  font-weight: 500;
+  line-height: 180px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #ffffff;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.percent-off span {
+  font-size: 208px;
+  font-weight: 700;
+  line-height: 254px;
+  letter-spacing: 0.02em;
+  text-align: right;
 }
