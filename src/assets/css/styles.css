@@ -92,6 +92,7 @@ main .sales {
   justify-content: center;
   gap: 35px;
   margin-bottom: 116px;
+  overflow-x: auto;
 }
 .card {
   display: flex;
