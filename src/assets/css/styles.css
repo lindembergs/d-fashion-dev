@@ -183,6 +183,16 @@ main .sales {
   background-color: #f9fafb;
 }
 
+.footer h3 {
+  font-family: "Euclid" "Circular" sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #1f2937;
+}
+
 .left-container,
 .right-container {
   display: flex;
@@ -258,4 +268,31 @@ main .sales {
   left: 0;
   width: 100%;
   border-bottom: 2px solid #000;
+}
+
+.socials-platforms {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socials ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.platforms {
+  display: flex;
+  align-items: center;
+}
+
+.platforms ul {
+  display: flex;
+  gap: 1rem;
 }
