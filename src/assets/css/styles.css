@@ -17,11 +17,6 @@ ul {
   list-style: none;
 }
 
-a {
-  color: #f9f9f9;
-  text-decoration: none;
-}
-
 .header {
   display: flex;
   align-items: center;
@@ -177,10 +172,10 @@ main .sales {
 .footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 62px 72px;
+  padding: 62px 50px;
   min-width: 100vw;
   background-color: #f9fafb;
+  gap: 5%;
 }
 
 .footer h3 {
@@ -198,6 +193,9 @@ main .sales {
   display: flex;
   flex-direction: column;
   width: 50%;
+}
+.right-container {
+  padding-right: 65px;
 }
 
 .info-support-care {
@@ -295,4 +293,24 @@ main .sales {
 .platforms ul {
   display: flex;
   gap: 1rem;
+}
+
+.input-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input-btn input {
+  width: 70%;
+}
+
+.payment-list {
+  display: flex;
+  align-items: center;
+}
+
+.payment-list ul {
+  display: flex;
+  gap: 8px;
 }
