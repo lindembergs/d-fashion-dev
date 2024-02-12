@@ -175,7 +175,7 @@ main .sales {
   padding: 62px 50px;
   min-width: 100vw;
   background-color: #f9fafb;
-  gap: 5%;
+  gap: 20%;
 }
 
 .footer h3 {
@@ -272,6 +272,7 @@ main .sales {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 16px;
 }
 
 .socials ul {
@@ -283,6 +284,7 @@ main .sales {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 41px;
 }
 
 .platforms {
@@ -294,15 +296,32 @@ main .sales {
   display: flex;
   gap: 1rem;
 }
+.subscribe h4 {
+  font-family: "Euclid" "Circular " sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  margin-bottom: 5px;
+}
 
 .input-btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 18px;
 }
 
 .input-btn input {
-  width: 70%;
+  width: 60%;
+  height: 44px;
+  padding: 13px, 16px, 13px, 16px;
+  border: 2px solid #9ca3af;
+  gap: 10px;
+  border-radius: 2px;
+  padding-left: 15px;
+  font-weight: 700;
 }
 
 .payment-list {
@@ -313,4 +332,18 @@ main .sales {
 .payment-list ul {
   display: flex;
   gap: 8px;
+}
+
+.notice {
+  margin-bottom: 62px;
+}
+
+.accept-text {
+  font-family: "Euclid" "Circular" sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  margin-bottom: 24px;
 }
