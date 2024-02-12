@@ -173,9 +173,9 @@ main .sales {
   display: flex;
   justify-content: space-between;
   padding: 62px 50px;
-  min-width: 100vw;
+  min-width: 100%;
   background-color: #f9fafb;
-  gap: 20%;
+  gap: 10%;
 }
 
 .footer h3 {
@@ -195,7 +195,7 @@ main .sales {
   width: 50%;
 }
 .right-container {
-  padding-right: 65px;
+  padding-right: 100px;
 }
 
 .info-support-care {
@@ -322,6 +322,21 @@ main .sales {
   border-radius: 2px;
   padding-left: 15px;
   font-weight: 700;
+}
+.input-btn button {
+  width: 138px;
+  height: 43px;
+  padding: 13px 30px 13px 30px;
+  background-color: #1f2937;
+  border: none;
+  cursor: pointer;
+  font-family: "ABeeZee";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #ffffff;
 }
 
 .payment-list {
