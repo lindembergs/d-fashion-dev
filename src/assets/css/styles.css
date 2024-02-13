@@ -415,7 +415,7 @@ main .sales {
    font-size: .8rem
   }
 }
-@media (max-width: 820px) {
+@media (max-width: 834px) {
   .percent-off {
     margin-right: 200px;
   }
@@ -525,5 +525,40 @@ main .sales {
     height: 49px;
     margin-bottom: 80px;
     margin-left: 200px;
+  }
+  .footer{
+    padding: 62px 0px;
+    gap: 4%;
+  }
+  .info-support-care{
+    gap: 10px;
+  }
+  .info{
+    margin-bottom: 30px;
+  }
+  .info ul{
+    gap: 5px;
+    font-size: .9rem;
+  }
+  .support ul{
+    gap: 5px;
+    font-size: .9rem;
+  }
+  .care 
+  {
+    margin-bottom: 30px;
+  }
+  .care ul{
+    gap: 5px;
+    font-size: .9rem;
+  }
+  .input-btn input{
+    width: 70%;
+  }
+  .input-btn button{
+    width: 120px;
+  }
+  .copy-privacy .first-ul li{
+   font-size: .8rem
   }
 }
