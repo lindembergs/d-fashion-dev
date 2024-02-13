@@ -362,3 +362,67 @@ main .sales {
   text-align: left;
   margin-bottom: 24px;
 }
+
+@media (max-width: 820px) {
+  .percent-off {
+    margin-right: 200px;
+  }
+  .percent-off h1,
+  .percent-off span {
+    font-size: 9rem;
+  }
+}
+@media (max-width: 1024px) {
+  .card {
+    min-width: 40%;
+  }
+  main.sales {
+    background-size: contain;
+  }
+  main .sales img {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .percent-off {
+    width: 100%;
+    margin-left: 200px;
+    margin-top: 70px;
+  }
+  .percent-off h1 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 49px;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+  .percent-off span {
+    font-size: 57px;
+    font-weight: 700;
+    line-height: 69px;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+  .card {
+    min-width: 80%;
+    width: 80%;
+  }
+  .cards-container {
+    margin-left: -20px;
+    margin-right: -25px;
+  }
+  .sales {
+    max-height: 193.22px;
+  }
+  main .sales {
+    background-size: cover;
+  }
+  main .sales img {
+    margin-left: 10px;
+    width: 88.43px;
+    height: 49px;
+    margin-bottom: 80px;
+    margin-left: 200px;
+  }
+}
