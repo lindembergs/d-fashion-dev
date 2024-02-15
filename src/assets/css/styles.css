@@ -515,6 +515,7 @@ main .sales {
   .cards-container {
     margin-left: -20px;
     margin-right: -25px;
+    margin-bottom: 120px;
   }
   .sales {
     max-height: 193.22px;
@@ -532,6 +533,7 @@ main .sales {
   .footer{
     padding: 0px;
     gap: 6%;
+    height: 393px;
   }
   .info-support-care{
     gap: 10px;
@@ -564,7 +566,7 @@ main .sales {
     flex-direction: column;
     padding-left: 5px;
     justify-content: center;
-    margin-top: 113px;
+    margin-top: 35px;
   }
   .copy-privacy p {
     font-family: "Euclid" "Circular" sans-serif;
@@ -612,11 +614,45 @@ main .sales {
     width:25px;
     height:25px;
   }
+  .subscribe h4{
+    font-size: .75rem;
+    margin-top: -20px;
+    margin-left: 10px;
+  }
+  .input-btn{
+    display: flex;
+    flex-direction: column;
+  }
   .input-btn input{
-    width: 70%;
+    width: 95%;
+    height: 30px;
+    margin-bottom: 8px;
   }
   .input-btn button{
-    width: 120px;
+    width: 95%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    margin-left: 10px;
+  }
+  .notice{
+    margin-bottom: 10px;
+  }
+  .notice p, a{
+    font-size: .75rem;
+  }
+  .accept-text{
+    margin-bottom:2px;
+  }
+  .payment-list li{
+    height: 40px;
+    margin: 0;
+    padding: 0;
+  }
+  .payment-list img{
+    width: 40px;
+    height: 42px;
   }
  
   .left-container{
