@@ -369,6 +369,9 @@ main .sales {
   text-align: left;
   margin-bottom: 24px;
 }
+.socials-mobile-icons{
+  display: none;
+}
 @media (max-width: 1024px) {
   .card {
     min-width: 40%;
@@ -527,30 +530,87 @@ main .sales {
     margin-left: 200px;
   }
   .footer{
-    padding: 62px 0px;
-    gap: 4%;
+    padding: 0px;
+    gap: 6%;
   }
   .info-support-care{
     gap: 10px;
+    padding-left: 5px;
+  }
+  .info-support-care h3{
+    font-size: .75rem;
   }
   .info{
-    margin-bottom: 30px;
+    margin-bottom: 80px;
   }
   .info ul{
     gap: 5px;
-    font-size: .9rem;
+    font-size: .7rem;
   }
   .support ul{
     gap: 5px;
-    font-size: .9rem;
+    font-size: .7rem;
   }
   .care 
   {
-    margin-bottom: 30px;
+    margin-bottom: 70px;
   }
   .care ul{
     gap: 5px;
-    font-size: .9rem;
+    font-size: .7rem;
+  }
+  .copy-privacy {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+    justify-content: center;
+    margin-top: 113px;
+  }
+  .copy-privacy p {
+    font-family: "Euclid" "Circular" sans-serif;
+    font-size: 13px;
+  }
+  .copy-privacy ul {
+    gap: 1rem;
+  }
+  .copy-privacy .first-ul li{
+   font-size: .64rem;
+  }
+  .copy-privacy .second-ul li{
+   font-size: .7rem
+  }
+  .socials-platforms{
+    margin-top: 50px;
+  }
+  .socials-platforms h3{
+    justify-content: center;
+    gap: 10px;
+    font-size: .75rem;
+  }
+  .socials-platforms h3:first-child{
+    margin-left:10px;
+  }
+  .socials-platforms h3:last-child{
+    margin-left: 2.5rem;
+  }
+  .platforms img{
+    width: 25px;
+    height: 25px;
+    margin-bottom: 30px;
+  }
+  .socials{
+    display: flex;
+    max-width: 90px;
+    margin-left: 7px;
+  }
+  .socials ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .socials img{
+    width:25px;
+    height:25px;
   }
   .input-btn input{
     width: 70%;
@@ -558,7 +618,12 @@ main .sales {
   .input-btn button{
     width: 120px;
   }
-  .copy-privacy .first-ul li{
-   font-size: .8rem
+ 
+  .left-container{
+    padding-left: 1px;
+  }
+  .right-container{
+    padding-right: 4px;
+
   }
 }
