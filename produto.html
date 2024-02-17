@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="src/assets/css/produto.css">
+</head>
+
+<body>
+  <!-- Swiper -->
+  <h2 class="conjuntos">Conjuntos</h2>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="card swiper-slide">
+        <img src="src/assets/img/Conjunto/01 - Bramco.svg" alt="" />
+        <div class="card-info">
+          <p>Conjunto Alfaiataria Short e Cropped de Alça</p>
+          <div class="price-btn">
+            <span>$150,99</span>
+            <span>$205,60</span>
+            <button><a href="produto.html" target="_blank" rel="noopener noreferrer"><img src="src/assets/icons/+.svg" alt="" /></a></button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    let swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        type: 'bullets'
+      },
+      grabCursor: true,
+      loop: true,
+      simulateTouch: true
+      },
+    );
+  </script>
+</body>
+
+</html>
