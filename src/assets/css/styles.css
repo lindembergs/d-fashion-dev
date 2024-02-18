@@ -525,10 +525,6 @@ main .sales {
     letter-spacing: 0.02em;
     text-align: left;
   }
-  .card {
-    min-width: 80%;
-    width: 80%;
-  }
   .sales {
     max-height: 193.22px;
   }
