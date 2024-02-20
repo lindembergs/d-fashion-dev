@@ -1,4 +1,51 @@
-fetch('dados.json')
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <title>D Fashion dev</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <!-- Links styleSheet -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="src/assets/css/styles.css" />
+</head>
+
+<body>
+
+  <h2 class="conjuntos">Conjuntos</h2>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-container" id="conjuntos-carousel"></div>
+    </div>
+    <div id="conjuntos-carousel-next"></div>
+    <div id="conjuntos-carousel-prev"></div>
+  </div>
+
+  <h2 class="conjuntos">T-shirts</h2>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-container" id="tshirts-carousel"></div>
+    </div>
+    <div id="tshirts-carousel-next"></div>
+    <div id="tshirts-carousel-prev"></div>
+  </div>
+
+  <h2 class="conjuntos">Casacos</h2>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-container" id="casacos-carousel"></div>
+    </div>
+    <div id="casacos-carousel-next"></div>
+    <div id="casacos-carousel-prev"></div>
+  </div>
+
+  <!-- Seu JSON aqui -->
+  <script>
+    fetch('dados.json')
       .then(response => response.json())
       .then(jsonData => {
         function createCarousel(containerId, items) {
@@ -9,7 +56,6 @@ fetch('dados.json')
           items.forEach(item => {
             const slide = document.createElement('div');
             slide.classList.add('swiper-slide', 'card');
-            console.log(items)
 
             // Adaptação para o formato do card
             slide.innerHTML = `<img src="${item.image}" alt="${item.product_name}" />
@@ -46,34 +92,11 @@ fetch('dados.json')
         createCarousel('tshirts-carousel', tshirts.product);
         createCarousel('casacos-carousel', casacos.product);
       });
+  </script>
 
-//   let swiper = new Swiper(".mySwiper", {
-//       slidesPerView: 5,
-//       spaceBetween: 30,
-//       pagination: {
-//           el: ".swiper-pagination",
-//           clickable: true,
-//           type: "bullets"
-//       },
-//       grabCursor: true,
-//       loop: true,
-//       simulateTouch: true,
-//       breakpoints: {
-//           480: {
-//               slidesPerView: 1,
-//               spaceBetween: 10,
-//               // ... outras configurações para dispositivos móveis ...
-//           },
-//           768: {
-//               slidesPerView: 2,
-//               spaceBetween: 15,
-//               // ... outras configurações para tablets ...
-//           },
-//           1024: {
-//               slidesPerView: 3,
-//               spaceBetween: 20,
-//               // ... outras configurações para tablets maiores ou desktops menores ...
-//           }
-//       }
-//   });
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+</body>
+
+</html>
