@@ -12,7 +12,8 @@ fetch('dados.json')
             console.log(items)
 
             // Adaptação para o formato do card
-            slide.innerHTML = `<img src="${item.image}" alt="${item.product_name}" />
+            slide.innerHTML = `<div class="card">
+            <img src="${item.image}" alt="${item.product_name}" />
                                <div class="card-info">
                                   <p>${item.product_name}</p>
                                   <div class="price-btn">
@@ -30,6 +31,11 @@ fetch('dados.json')
           new Swiper(`#${containerId}`, {
             slidesPerView: 1,
             spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
             navigation: {
               nextEl: `#${containerId}-next`,
               prevEl: `#${containerId}-prev`,

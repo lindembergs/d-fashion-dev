@@ -112,7 +112,7 @@ main .sales {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 33%;
+  width: 100%;
   height: 472px;
   background-color: #ffffff;
 }
@@ -392,7 +392,7 @@ main .sales {
 }
 @media (max-width: 1024px) {
   .card {
-    min-width: 40%;
+    min-width: 28%;
   }
   main.sales {
     background-size: contain;

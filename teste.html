@@ -57,7 +57,6 @@
             const slide = document.createElement('div');
             slide.classList.add('swiper-slide', 'card');
 
-            // Adaptação para o formato do card
             slide.innerHTML = `<img src="${item.image}" alt="${item.product_name}" />
                                <div class="card-info">
                                   <p>${item.product_name}</p>
@@ -66,7 +65,8 @@
                                     <span>${item.previous_price}</span>
                                     <button><img src="src/assets/icons/+.svg" alt="" /></button>
                                   </div>
-                               </div>`;
+                               </div> </div>`
+                               ;
 
             swiperWrapper.appendChild(slide);
           });
