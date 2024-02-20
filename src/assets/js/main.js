@@ -9,16 +9,15 @@ fetch('dados.json')
           items.forEach(item => {
             const slide = document.createElement('div');
             slide.classList.add('swiper-slide', 'card');
-            console.log(items)
+            console.log(item)
 
-            // Adaptação para o formato do card
             slide.innerHTML = `<div class="card">
             <img src="${item.image}" alt="${item.product_name}" />
                                <div class="card-info">
                                   <p>${item.product_name}</p>
                                   <div class="price-btn">
                                     <span>${item.current_price}</span>
-                                    <span>${item.previous_price}</span>
+                                    <span>${item.old_price}</span>
                                     <button><img src="src/assets/icons/+.svg" alt="" /></button>
                                   </div>
                                </div>`;
@@ -29,9 +28,9 @@ fetch('dados.json')
           container.appendChild(swiperWrapper);
 
           new Swiper(`#${containerId}`, {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            loop: true,
+            slidesPerView: 5,
+            spaceBetween: 30,
+            // loop: true,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
@@ -40,10 +39,10 @@ fetch('dados.json')
               nextEl: `#${containerId}-next`,
               prevEl: `#${containerId}-prev`,
             },
+            
           });
         }
 
-        // Filtrar itens por classe e criar carrosséis
         const conjuntos = jsonData.find(category => category.class === 'Conjunto');
         const tshirts = jsonData.find(category => category.class === 'T-shirts');
         const casacos = jsonData.find(category => category.class === 'Casacos');
