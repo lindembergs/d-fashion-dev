@@ -7,6 +7,9 @@
 button{
   cursor: pointer;
 }
+.old-price{
+  text-decoration: line-through;
+}
 
 html,
 body {

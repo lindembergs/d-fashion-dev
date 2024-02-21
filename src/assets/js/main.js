@@ -11,18 +11,16 @@ document.addEventListener('DOMContentLoaded',() => {
       items.forEach(item => {
         const slide = document.createElement('div');
         slide.classList.add('swiper-slide', 'card');
-        console.log(item)
 
         slide.innerHTML = `<img src="${item.image}" alt="${item.product_name}" />
                            <div class="card-info">
                               <p>${item.product_name}</p>
                               <div class="price-btn">
                                 <span>${item.current_price}</span>
-                                <span>${item.old_price}</span>
+                                <span class="old-price">${item.old_price}</span>
                                 <button><a href= "./product.html"><img src="src/assets/icons/+.svg" alt="" /><a/></button>
                               </div>
                            </div>`;
-                           console.log(slide)
 
         swiperWrapper.appendChild(slide);
       });
@@ -32,14 +30,31 @@ document.addEventListener('DOMContentLoaded',() => {
       new Swiper(`#${containerId}`, {
         slidesPerView: 5,
         spaceBetween: 30,
-        loop: true,
+        loop: false,
+        longSwipes: true,
+        grabCursor: true,
+        freeMode: true,
+        freeModeMomentum: true,
+        freeModeMomentumRatio: 0.5,
+        freeModeMomentumBounce: false,  // Evita o efeito de "quicar" ao final do movimento livre
+        freeModeSticky: true,           // Mantém os slides dentro do contêiner
+        freeMode: {
+          enabled: true,
+          sticky: true,
+        },
+        // autoplay: {
+        //   delay: 20000,
+        // },
+        controller: {
+          inverse: true,
+        },
         pagination: {
-          el: `.swiper-pagination-${containerId}`,
+          el: `.swiper-pagination`,
           clickable: true,
         },
         navigation: {
-          nextEl: `#${containerId}-next`,
-          prevEl: `#${containerId}-prev`,
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
         },
         breakpoints: {
           480: {
@@ -53,6 +68,11 @@ document.addEventListener('DOMContentLoaded',() => {
           1024: {
             slidesPerView: 3,
             spaceBetween: 20,
+          },
+          // Adicione um breakpoint para telas menores, se necessário
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 5,
           }
         }
       });
