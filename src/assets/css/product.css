@@ -36,10 +36,10 @@ button{
   width: 30%;
 }
 .header .logo img:first-child {
-  width: 13%;
+  width: 25px;
 }
 .header .logo img {
-  width: 100%;
+  width: 200px;
 }
 .header .cart-account {
   display: flex;

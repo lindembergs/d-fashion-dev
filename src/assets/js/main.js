@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded',() => {
                               <div class="price-btn">
                                 <span>${item.current_price}</span>
                                 <span class="old-price">${item.old_price}</span>
-                                <button><a href= "./product.html"><img src="src/assets/icons/+.svg" alt="" /><a/></button>
+                                <button><a href="./product.html?productName=${encodeURIComponent(item.product_name)}&currentPrice=${encodeURIComponent(item.current_price)}&oldPrice=${encodeURIComponent(item.old_price)}&image=${encodeURIComponent(item.image)}"><img src="src/assets/icons/+.svg" alt="" /></a></button>
                               </div>
                            </div>`;
 
