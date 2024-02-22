@@ -6,8 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const oldPrice = urlParams.get('oldPrice');
     const image = urlParams.get('image');
    
-    const data = getData()
-    console.log(data)
 
     document.querySelector('.left-container img').src = decodeURIComponent(image);
     document.querySelector('.right-container p').textContent = productName;
