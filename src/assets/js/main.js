@@ -35,6 +35,7 @@
           loop: false,
           longSwipes: true,
           grabCursor: true,
+          type: 'bullets',
           freeMode: true,
           freeModeMomentum: true,
           freeModeMomentumRatio: 0.5,
