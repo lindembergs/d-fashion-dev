@@ -30,14 +30,20 @@
         container.appendChild(swiperWrapper);
   
         new Swiper(`#${containerId}`, {
+          // effect: 'coverflow',
           slidesPerView: 5,
+          parallax: true,
+          bulletActiveClass: true,
+          dynamicBullets: true,
+          updateOnWindowResize: true,
           spaceBetween: 30,
+          rewind: true,
           loop: false,
           longSwipes: true,
           grabCursor: true,
           type: 'bullets',
           freeMode: true,
-          freeModeMomentum: true,
+          freeModeMomentum: false,
           freeModeMomentumRatio: 0.5,
           freeModeMomentumBounce: false,  
           freeModeSticky: true,           
@@ -48,6 +54,10 @@
           // autoplay: {
           //   delay: 20000,
           // },
+          scrollbar: {
+            el: '.swiper-scrollbar',
+            draggable: true,
+          },
           controller: {
             inverse: true,
           },
@@ -62,7 +72,8 @@
           breakpoints: {
             480: {
               slidesPerView: 1,
-              spaceBetween: 10,
+              spaceBetween: 20,
+              // effect: 'cards'
             },
             768: {
               slidesPerView: 2,
