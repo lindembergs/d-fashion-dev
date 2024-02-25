@@ -1,4 +1,6 @@
 
+const addToCartBtn = document.querySelector('#add-cart-btn')
+
 document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     const productName = urlParams.get('productName');
@@ -16,22 +18,29 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.old-price').textContent = oldPrice;
   });
 
-  document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('DOMContentLoaded',  ()  => {
     const openModalBtn = document.getElementById('openModalBtn');
     const closeModalBtn = document.getElementById('closeModalBtn');
     const modal = document.getElementById('myModal');
   
-    openModalBtn.addEventListener('click', function () {
+    openModalBtn.addEventListener('click',  ()  => {
       modal.style.display = 'block';
     });
   
-    closeModalBtn.addEventListener('click', function () {
+    closeModalBtn.addEventListener('click',  ()  => {
       modal.style.display = 'none';
     });
 
-    window.addEventListener('click', function (event) {
-      if (event.target === modal) {
+    window.addEventListener('click',  (e) => {
+      if (e.target === modal) {
         modal.style.display = 'none';
       }
     });
   });
+  
+  const addToCart = () => {
+   alert('Produto adicionado ao carrinho')
+  }
+  
+  addToCartBtn.addEventListener('click', addToCart)
+  

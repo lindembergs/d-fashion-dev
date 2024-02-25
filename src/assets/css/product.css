@@ -3,35 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
 
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.close:hover {
-  color: black;
-}
 html,
 body {
   font-family: "Montserrat", sans-serif;
@@ -75,12 +47,9 @@ button{
   gap: 3rem;
   cursor: pointer;
 }
+
 .left-container img{
   width: 368px;
-}
-.left-container-modal img{
-  width: 132px;
-  height: 172px;
 }
 
 .right-container{
@@ -88,11 +57,7 @@ button{
   flex-direction: column;
   max-width: 500px;
 }
-.right-container-modal{
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-}
+
 .right-container p{
   font-size: 32px;
   font-weight: 400;
@@ -102,15 +67,7 @@ button{
   color: #374151;
   margin-bottom: 8px;
 }
-.right-container-modal p{
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 39px;
-  letter-spacing: 0.02em;
-  text-align: left;
-  color: #374151;
-  margin-bottom: 8px;
-}
+
 .right-container .rate{
   width: 351.1px;
   height: 40px;
@@ -127,13 +84,7 @@ button{
   flex-wrap: wrap;
   padding-right: 7%;
 }
-.product-modal{
-  display: flex;
-  gap: 100px;
-  padding-left: 7%;
-  flex-wrap: wrap;
-  padding-right: 7%;
-}
+
 .product .price{
   font-size: 48px;
   font-weight: 700;
@@ -150,12 +101,6 @@ button{
   text-decoration: line-through;
   
 }
-
-.color, .color-modal{
-  margin-bottom: 24px;
-}
-
-
 
 .available-products .available-img img{
   width: 72px;
@@ -197,4 +142,128 @@ button{
   font-weight: 700;
   line-height: 39px;
   text-align: center;
+}
+
+             /* inicio do modal */
+             .modal {
+              display: none;
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(0, 0, 0, 0.5);
+            }
+            
+            .modal-content {
+              background-color: #fefefe;
+              margin: 15% auto;
+              padding: 20px;
+              border: 1px solid #888;
+              width: 80%;
+            }
+            
+            .close {
+              color: #aaa;
+              float: right;
+              font-size: 28px;
+              font-weight: bold;
+              cursor: pointer;
+            }
+            
+            .close:hover {
+              color: black;
+            }
+            .left-container-modal{
+              display: flex;
+              width: 50%;
+            }
+            .finish-modal{
+              display: flex;
+              flex-direction: column;
+            }
+            .left-container-modal img{
+              margin-bottom: -80px;
+              margin-top: 15px;
+              width: 132px;
+              height: 172px;
+            }
+            .right-container-modal{
+              display: flex;
+              flex-direction: column;
+              max-width: 500px;
+            }
+            .right-container-modal p{
+              font-size: 32px;
+              font-weight: 400;
+              line-height: 39px;
+              letter-spacing: 0.02em;
+              text-align: left;
+              color: #374151;
+              margin-bottom: 8px;
+            }
+            .modal-all-items{
+              padding-left: 7%;
+            }
+            .product-modal{
+              display: flex;
+              gap: 100px;
+              padding-left: 7%;
+              flex-wrap: wrap;
+              padding-right: 7%;
+            }
+            .color, .color-modal{
+  margin-bottom: 24px;
+}
+
+             /* final do modal */
+
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0% 15px 7%;
+  }
+  .header .logo {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-right: 20px;
+    width: 20%;
+  }
+  .header .logo img:first-child {
+    width: 20px;
+  }
+  .header .logo img {
+    width: 150px;
+  }
+  .header .cart-account {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    margin-right: .75rem;
+  }
+  .right-container-modal p{
+    font-size: 1.1rem;
+  line-height: 25px;
+  }
+}
+
+@media (max-width: 480px){
+  .header .logo img:first-child {
+    width: 15px;
+  }
+  .header .logo img {
+    width: 120px;
+  }
+  .header .cart-account img {
+    width: 20px;
+  }
+  .right-container-modal p{
+    font-size: .8rem;
+  line-height: 20px;
+  width: 250px;
+  }
 }

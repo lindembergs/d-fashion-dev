@@ -47,30 +47,32 @@
               />
             </div>
           </header>
-          <h2>Todos os itens</h2>
+          <h2 class="modal-all-items">Todos os itens</h2>
           <!-- main-modal -->
           <section class="product-modal">
             <div class="left-container-modal">
               <img src="src/assets/img/Conjunto/01 - Bramco.svg" alt="">
+              <div class="finish-modal">
+                <p>
+                  Conjunto alfaiataria cropped de alça e short com elástico na cintura
+                </p>
+                <div class="color-size-cart"><p class="color-modal">Cor: Branco</p><img src="src/assets/icons/tamanho-p.svg" alt=""></div>
+                <div class="price-trash">
+                <div class="price-modal">
+                  <span>$150,99</span>
+                </div>
+                <div class="btn-input-trash">
+                  <button>-</button><input type="number"><button>+</button> <img src="src/assets/icons/trash.svg" alt="">
+                </div>
+              </div>
+              </div>
+             
             </div>
             <div class="right-container-modal">
-              <p>
-                Conjunto alfaiataria cropped de alça e short com elástico na cintura
-              </p>
-              <div class="color-size-cart"><p class="color-modal">Cor: Branco</p><img src="src/assets/icons/tamanho-p.svg" alt=""></div>
-              <div class="price-trash">
-              <div class="price-modal">
-                <span>$150,99</span>
+              <div class="btn-buy">
+                <button>Finalizar compra</button>
               </div>
-              <div class="btn-input-trash">
-                <button>-</button><input type="number"><button>+</button> <img src="src/assets/icons/trash.svg" alt="">
-              </div>
-            </div>
-             
-              <div class="available-products-modal">
-            </div>
-            <div class="btn-buy">
-              <button>Finalizar compra</button>
+          
             </div>
             </div>
           </section>
@@ -116,7 +118,7 @@
           <img src="src/assets/icons/tamanho-g.svg" alt="">
         </div>
         <div class="btn-add">
-          <button>Adicionar ao carrinho</button>
+          <button id="add-cart-btn">Adicionar ao carrinho</button>
         </div>
         </div>
       </section>
