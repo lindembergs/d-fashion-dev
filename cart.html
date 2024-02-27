@@ -40,20 +40,20 @@
           <div class="left-container-modal">
             <img class="img-product-cart" src="src/assets/img/Conjunto/01 - Bramco.svg" alt="">
             <div class="finish-modal">
-              <p class="product-description">
+              <p id="product-description" class="product-description">
                 Conjunto alfaiataria cropped de alça e short com elástico na cintura
               </p>
               <div class="color-size-cart">
-                <p class="color-modal">Cor: Branco</p>
-                <span class="selected-size">P</span>
+                <p id="selected-color" class="color-modal">Cor: Branco</p>
+                <span id="selected-size" class="selected-size">P</span>
               </div>
               <div class="price-trash">  
                 <div class="price-modal">
-                  <span>$150,99</span>
+                  <span id="corrent-price">$150,99</span>
                   <div class="btn-input-trash">
-                    <button>-</button>
-                    <input type="number" value="1">
-                    <button>+</button>
+                    <button id="btn-subtract">-</button>
+                    <input id="input-value" type="number" value="0">
+                    <button id="btn-sum">+</button>
                     <div class="trash-img">
                       <img src="src/assets/icons/trash.svg" alt="">
                     </div>
@@ -77,6 +77,6 @@
     </div>
   </div>
 
-  <script src="src/assets/js/cart.js"></script>
+  <script type="module" src="src/assets/js/cart.js"></script>
 </body>
 </html>

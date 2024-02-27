@@ -1,4 +1,5 @@
 
+
 const addToCartBtn = document.querySelector('#add-cart-btn')
 const openCartBtn = document.querySelector('#open-cart-btn')
 const colorOptionTargets = document.querySelectorAll('.color-option-target');

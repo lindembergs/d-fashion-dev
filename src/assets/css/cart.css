@@ -180,6 +180,10 @@
     border: 1px solid #000000;
     border-radius: 7px;
   }
+  .left-container-modal{
+    border-bottom: 1px solid #374151;
+    padding-bottom: 50px;
+  }
   .left-container-modal img{
     margin-bottom: -80px;
     margin-top: 15px;
