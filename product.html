@@ -24,7 +24,7 @@
       />
     </div></a>
     
-  <div class="cart-account">
+  <div class="cart-account" id="open-cart-btn">
     <a href="cart.html" target="_blank"><img id="openModalBtn"
     src="src/assets/icons/cart.svg"
     alt="imagem do carrinho de compras"
@@ -41,25 +41,25 @@
       <img src="src/assets/img/Conjunto/01 - Bramco.svg" alt="">
     </div>
     <div class="right-container">
-      <p>
+      <p id="product-description">
         Conjunto alfaiataria cropped de alça e short com elástico na cintura
       </p>
       <img class="rate" src="src/assets/icons/star.svg" alt="">
       <div class="price">
-        <span>$150,99</span> <span class="old-price">$205,60</span>
+        <span id="product-price">$150,99</span> <span class="old-price">$205,60</span>
       </div>
-      <p class="color">Cor: Branco</p>
+      <p class="color" id="product-color">Cor: Branco</p>
       <div class="available-products">
         <div class="available-img">
-          <img class="first-color-option" src="src/assets/img/Conjunto/01 - Bramco.svg" alt="">
-          <img class="second-color-option" src="src/assets/img/Conjunto/02 - Rosa.svg" alt="">
-          <img class="third-color-option" src="src/assets/img/Conjunto/03 - Preto.svg" alt="">
+          <img class="first-color-option color-option-target" data-color="branco" src="src/assets/img/Conjunto/01 - Bramco.svg" alt="">
+          <img class="second-color-option color-option-target" data-color="rosa" src="src/assets/img/Conjunto/02 - Rosa.svg" alt="">
+          <img class="third-color-option color-option-target" data-color="preto" src="src/assets/img/Conjunto/03 - Preto.svg" alt="">
         </div>
       </div>
       <div class="available-sizes">
-        <span>P</span>
-        <span>M</span>
-        <span>P</span>
+        <span class="size-option-target">P</span>
+        <span class="size-option-target">M</span>
+        <span class="size-option-target">G</span>
       </div>
       <div class="btn-add">
         <button id="add-cart-btn">Adicionar ao carrinho</button>
