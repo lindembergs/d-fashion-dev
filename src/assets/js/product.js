@@ -17,6 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.price span').textContent = currentPrice;
     document.querySelector('.old-price').textContent = oldPrice;
   });
+
+ 
   
   const addToCart = () => {
    alert('Produto adicionado ao carrinho')
@@ -24,3 +26,21 @@ document.addEventListener('DOMContentLoaded', () => {
   
   addToCartBtn.addEventListener('click', addToCart)
   
+ function atualizaCartUrl () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const productName = urlParams.get('productName');
+    const currentPrice = urlParams.get('currentPrice');
+    const oldPrice = urlParams.get('oldPrice');
+    const image = urlParams.get('image');
+    const color = urlParams.get('color');
+    const size = urlParams.get('size');
+
+    if (productName && currentPrice && oldPrice && image && color && size) {
+      const cartLink = document.getElementById('openModalBtn');
+      const cartHref = `./product.html?productName=${encodeURIComponent(productName)}&currentPrice=${encodeURIComponent(currentPrice)}&oldPrice=${encodeURIComponent(oldPrice)}&image=${encodeURIComponent(image)}&color=${encodeURIComponent(color)}&size=${encodeURIComponent(size)}`;
+      cartLink.parentElement.setAttribute('href', cartHref);
+    }
+  }
+
+
+
