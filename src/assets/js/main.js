@@ -1,6 +1,6 @@
 
- document.addEventListener('DOMContentLoaded',() => {
-  function getData(){
+
+ export function getData(){
     fetch('dados.json')
     .then(response => response.json())
     .then(data => {
@@ -10,7 +10,7 @@
         swiperWrapper.classList.add('swiper-wrapper');
        
   
-        items.forEach(item => {
+        items.map(item => {
           const slide = document.createElement('div');
           slide.classList.add('swiper-slide', 'card');
   
@@ -20,7 +20,7 @@
                                 <div class="price-btn">
                                   <span>${item.current_price}</span>
                                   <span class="old-price">${item.old_price}</span>
-                                  <button><a href="./product.html?productName=${encodeURIComponent(item.product_name)}&currentPrice=${encodeURIComponent(item.current_price)}&oldPrice=${encodeURIComponent(item.old_price)}&image=${encodeURIComponent(item.image)}"><img src="src/assets/icons/+.svg" alt="" /></a></button>
+                                  <button><a href="./product.html?productName=${encodeURIComponent(item.product_name)}&currentPrice=${encodeURIComponent(item.current_price)}&oldPrice=${encodeURIComponent(item.old_price)}&image=${encodeURIComponent(item.image)}&color=${encodeURIComponent('Branco')}&size=${encodeURIComponent('M')}"><img src="src/assets/icons/+.svg" alt="" /></a></button>
                                 </div>
                              </div>`;
   
@@ -101,6 +101,5 @@
     });
   }
   getData()
-})
 
 

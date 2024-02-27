@@ -106,11 +106,23 @@ button{
   width: 72px;
   height: 72.84px;
 }
-
-.available-sizes img{
+.available-sizes{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-block: 10px;
+}
+.available-sizes span{
+  display: flex;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  border-radius: 28.59px;
+  border: 0.43px solid black;
   width: 72px;
   height: 40px;
-  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
 }
 .color-size-cart{
   display: flex;
@@ -145,100 +157,6 @@ button{
   text-align: center;
 }
 
-/* inicio do modal */
-.modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-content {
-  background-color: #f5f5f5;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.close:hover {
-  color: black;
-}
-.modal-all-items{
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 39px;
-  text-align: left;
-  margin-block: 48px;
-}
-.left-container-modal{
-  display: flex;
-  width: 50%;
-}
-.finish-modal{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 20px;
-  
-}
-.finish-modal .product-description{
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 29px;
-  letter-spacing: 0.05em;
-  text-align: left;
-  /* margin-top: -50px; */
-  
-}
-.finish-modal .selected-size{
-  text-align: center;
-  height: 20px;
-  width: 40px;
-  border: 1px solid #000000;
-  border-radius: 7px;
-}
-.left-container-modal img{
-  margin-bottom: -80px;
-  margin-top: 15px;
-  width: 132px;
-  height: 172px;
-}
-.right-container-modal{
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-}
-.right-container-modal p{
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 39px;
-  letter-spacing: 0.02em;
-  text-align: left;
-  color: #374151;
-  margin-bottom: 8px;
-}
-.modal-all-items{
-  padding-left: 7%;
-}
-.product-modal{
-  display: flex;
-  gap: 100px;
-  padding-left: 7%;
-  flex-wrap: wrap;
-  padding-right: 7%;
-}
 .color, .color-modal{
   margin-bottom: 24px;
   font-size: 1rem;
@@ -247,82 +165,9 @@ button{
   letter-spacing: 0.02em;
   text-align: left;
 }
-.price-modal{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: -30px;
-}
-.btn-input-trash{
-  display: flex;
-  align-items: center;
-}
-.btn-input-trash button{
-  width: 40px;
-  height: 40px;
-  border: 0.47px solid #000000;
-  background-color: #ffffff;
-}
-.btn-input-trash input{
-  width: 70px;
-  height: 40px;
-  border: 0.47px solid #000000;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 29px;
-}
-.trash-img{
-  margin-top: -145px;
-}
-.trash-img img{
-  width: 32px;
-  height: 32px;
-}
-.price-trash{
-  margin-top: 42px;
-}
-.price-trash span{
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 29px;
-  text-align: left;
-  
-}
-.btn-buy{
-  width: 448px;
-  height: 290px;
-  display: flex;
-  flex-direction: column;
-  /* align-items: center;
-  justify-content: center; */
-  background-color: #ffffff;
-  padding: 32px;
-  border-radius: 7px;
-}
-.btn-buy h2{
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 29px;
-  text-align: left;
-  
-}
-.btn-buy .total-value{
-  text-align: right;
-  margin-top: 26px;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 39px;
-}
 
-.btn-buy button{
-  width: 384px;
-  height: 72px;
-  margin-top: 60px;
-  border-radius: 17.59px;
-}
 
-/* final do modal */
+
 
 @media (max-width: 768px) {
   .header {

@@ -23,74 +23,7 @@
       alt="nome fashion dev"
       />
     </div></a>
-    <!-- modal -->
     
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-        <span class="close" id="closeModalBtn">&times;</span>
-        
-        <header class="header">
-          <div class="logo">
-            <img src="src/assets/icons/simbulo.svg" alt="letra d da logo" /><img
-            src="src/assets/icons/nome.svg"
-            alt="nome fashion dev"
-            />
-          </div>
-          <div class="cart-account">
-            <img
-            src="src/assets/icons/cart.svg"
-            alt="imagem do carrinho de compras"
-            />
-            <img
-            src="src/assets/icons/account.svg"
-            alt="imagem da sessão de login"
-            />
-          </div>
-        </header>
-        <h2 class="modal-all-items">Todos os itens</h2>
-        <!-- main-modal -->
-        <section class="product-modal">
-          <div class="left-container-modal">
-            <img src="src/assets/img/Conjunto/01 - Bramco.svg" alt="">
-            <div class="finish-modal">
-              <p class="product-description">
-                Conjunto alfaiataria cropped de alça e short com elástico na cintura
-              </p>
-              <div class="color-size-cart">
-                <p class="color-modal">Cor: Branco</p>
-                <span class="selected-size">P</span>
-              </div>
-              <div class="price-trash">  
-                <div class="price-modal">
-                  <span>$150,99</span>
-                  <div class="btn-input-trash">
-                    <button>-</button>
-                    <input type="number" value="1">
-                    <button>+</button>
-                    <div class="trash-img">
-                      <img src="src/assets/icons/trash.svg" alt="">
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-            
-          </div>
-          <div class="right-container-modal">
-            <div class="btn-buy">
-              <h2>Valor total do seu pedido:</h2>
-              <span class="total-value">$470,92</span>
-              <button class="complete-purchase">Finalizar compra</button>
-            </div>
-            
-          </div>
-        </div>
-      </section>
-      <!-- end-main-modal -->
-    </div>
-  </div>
-  <!-- end of modal -->
   <div class="cart-account">
     <img id="openModalBtn"
     src="src/assets/icons/cart.svg"
@@ -124,9 +57,9 @@
         </div>
       </div>
       <div class="available-sizes">
-        <img src="src/assets/icons/tamanho-p.svg" alt="">
-        <img src="src/assets/icons/tamanho-m.svg" alt="">
-        <img src="src/assets/icons/tamanho-g.svg" alt="">
+        <span>P</span>
+        <span>M</span>
+        <span>G</span>
       </div>
       <div class="btn-add">
         <button id="add-cart-btn">Adicionar ao carrinho</button>
@@ -134,6 +67,6 @@
     </div>
   </section>
 </main>
-<script src="src/assets/js/product.js"></script>
+<script type="module" src="src/assets/js/product.js"></script>
 </body>
 </html>
