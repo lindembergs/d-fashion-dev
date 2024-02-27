@@ -45,14 +45,15 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('.price span').textContent = currentPrice;
   document.querySelector('.old-price').textContent = oldPrice;
   document.querySelector('.right-container p').textContent = productName;
-  document.querySelector('.price span').textContent = currentPrice;
-  document.querySelector('.old-price').textContent = oldPrice;
+  document.querySelector('.price span').innerHTML = currentPrice;
+  document.querySelector('.old-price').innerHTML = oldPrice;
 });
 
 
 
 const addToCart = () => {
   alert('Produto adicionado ao carrinho')
+  
 }
 
 addToCartBtn.addEventListener('click', addToCart)
