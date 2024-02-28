@@ -296,6 +296,10 @@ main .sales {
   width: 100%;
   height: 472px;
   background-color: #ffffff;
+  transition: all .5s;
+}
+.card:hover{
+  transform:scale(1.03)
 }
 
 .card img {
