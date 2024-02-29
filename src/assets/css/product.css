@@ -126,6 +126,9 @@ button{
   justify-content: center;
   cursor: pointer;
 }
+.available-sizes .selected{
+  border: 2px solid #00b4d8;
+}
 .color-size-cart{
   display: flex;
   gap: 20px;
