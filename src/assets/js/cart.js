@@ -2,7 +2,7 @@ const subtractBtn = document.querySelector("#btn-subtract");
 const sumBtn = document.querySelector("#btn-sum");
 const totalValue = document.querySelector('.total-value');
 const inputValue = document.querySelector('#input-value');
-
+const trashImg = document.querySelector('.btn-input-trash .trash-img img'); // Ajuste aqui
 
 function updateTotalValue() {
   const currentPrice = parseFloat(document.querySelector('#corrent-price').innerText);
@@ -38,4 +38,32 @@ subtractBtn.addEventListener('click', () => {
 sumBtn.addEventListener('click', () => {
   inputValue.value++;
   updateTotalValue();
+});
+
+trashImg.addEventListener('click', () => {
+
+  const productName = document.querySelector('#product-description').innerText;
+  const currentPrice = parseFloat(document.querySelector('#corrent-price').innerText);
+  const quantity = parseInt(inputValue.value);
+
+  const totalPriceToRemove = currentPrice * quantity;
+
+
+  let cart = localStorage.getItem('cart');
+  cart = cart ? JSON.parse(cart) : [];
+
+  const indexToRemove = cart.findIndex(item => item.productName === productName);
+
+
+  if (indexToRemove !== -1) {
+    cart.splice(indexToRemove, 1);
+    localStorage.setItem('cart', JSON.stringify(cart));
+  }
+
+  const productContainer = document.querySelector('.left-container-modal');
+  productContainer.innerHTML = ''; 
+
+  
+  inputValue.value = 1;
+  totalValue.innerText = '$0.00'; 
 });

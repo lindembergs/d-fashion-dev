@@ -74,6 +74,9 @@
     display: flex;
     
   }
+  .trash-img img:hover{
+    cursor: pointer;
+  }
   .product{
     display: flex;
     gap: 100px;
