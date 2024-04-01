@@ -1,357 +1,163 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>D Fashion dev</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <meta charset="UTF-8">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-  rel="stylesheet"
-  />
-  <!-- Links styleSheet -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="src/assets/css/styles.css" />
+
+  <title>DevFashion</title>
 </head>
-
 <body>
-  <header class="header">
-    <div class="logo">
-      <img src="src/assets/icons/simbulo.svg" alt="letra d da logo" /><img
-        src="src/assets/icons/nome.svg"
-        alt="nome fashion dev"
-      />
-    </div>
-    <div class="cart-account">
-      <a href="cart.html" target="_blank"><img 
-        src="src/assets/icons/cart.svg"
-        alt="imagem do carrinho de compras"
-        /></a>
-      <img
-        src="src/assets/icons/account.svg"
-        alt="imagem da sessão de login"
-      />
-    </div>
-  </header>
-  <main>
-    <section class="sales">
-      <div class="percent-off">
-        <h1>Até <span>80%</span></h1>
-        <span><img src="src/assets/img/off.svg" alt="Imagem do off" /></span>
+  <div class="container">
+    
+    <!-- INICIO HEADER -->
+    <header id="header">
+      <div>
+        <img class="header-logo-icon" src="./image/logo-img.svg" alt="logo-img">
+        <img class="header-logo-text" src="./image/logo.svg" alt="logo">
       </div>
-    </section>
-    <h2 class="conjuntos">Conjuntos</h2>
-    <div class="swiper mySwiper">
-      
-        <div class="swiper-container" id="conjuntos-carousel"></div>
 
-    </div>
-  
-    <h2 class="conjuntos">T-shirts</h2>
-    <div class="swiper mySwiper">
-      
-        <div class="swiper-container" id="tshirts-carousel"></div>
-      
-    </div>
-  
-    <h2 class="conjuntos">Casacos</h2>
-    <div class="swiper mySwiper">
-
-        <div class="swiper-container card" id="casacos-carousel"></div>
-      
-    </div>
-
-    
-  
-  
-
-  <div id="conjuntos-carousel-next"></div>
-  <div id="conjuntos-carousel-prev"></div>
-  <div id="tshirts-carousel-next"></div>
-  <div id="tshirts-carousel-prev"></div>
-  <div id="casacos-carousel-next"></div>
-  <div id="casacos-carousel-prev"></div>
-  
-  <!-- end of swipers -->
-<!-- modal -->
-    
-<div id="myModal" class="modal">
-  <div class="modal-content">
-    <span class="close" id="closeModalBtn">&times;</span>
-    
-    <header class="header">
-      <div class="logo">
-        <img src="src/assets/icons/simbulo.svg" alt="letra d da logo" /><img
-        src="src/assets/icons/nome.svg"
-        alt="nome fashion dev"
-        />
-      </div>
-      <div class="cart-account">
-        <img
-        src="src/assets/icons/cart.svg"
-        alt="imagem do carrinho de compras"
-        />
-        <img
-        src="src/assets/icons/account.svg"
-        alt="imagem da sessão de login"
-        />
+      <div class="header-menu">
+        <a href="./pages/cart/cart.html">
+          <figure class="header-cart-icon">
+            <img src="./image/cart.svg" alt="cart-img">
+          </figure>
+        </a>
+        <figure class="header-profile-icon">
+          <img src="./image/user.svg" alt="user-img">
+        </figure>
       </div>
     </header>
-    <h2 class="modal-all-items">Todos os itens</h2>
-    <!-- main-modal -->
-    <section class="product-modal">
-      <div class="left-container-modal">
-        <img src="src/assets/img/Conjunto/01 - Bramco.svg" alt="">
-        <div class="finish-modal">
-          <p class="product-description">
-            Conjunto alfaiataria cropped de alça e short com elástico na cintura
-          </p>
-          <div class="color-size-cart">
-            <p class="color-modal">Cor: Branco</p>
-            <span class="selected-size">P</span>
+    <!-- FIM HEADER -->
+
+    <!-- INICIO HOME -->
+    <main id="home">
+      <div class="home-capa">
+        <img src="./image/capa.png" alt="capa-img">
+      </div>
+    </main>
+    <!-- FIM HOME -->
+
+    <!-- INICIO FOOTER -->
+    <footer id="footer">
+      <div class="footer-rows">
+        <section class="links-section">
+          <div class="links-collun">
+            <h6>Sobre nós</h6>
+            
+            <ul>
+              <li>Sobre Dev Fashion</li>
+              <li>Responsabilidade Social</li>
+              <li>Afiliado</li>
+              <li>Fashion Blogger</li>
+            </ul>
           </div>
-          <div class="price-trash">  
-            <div class="price-modal">
-              <span>$150,99</span>
-              <div class="btn-input-trash">
-                <button>-</button>
-                <input type="number" value="1">
-                <button>+</button>
-                <div class="trash-img">
-                  <img src="src/assets/icons/trash.svg" alt="">
-                </div>
+
+          <div class="links-collun">
+            <h6>Ajuda e Suporte</h6>
+            
+            <ul>
+              <li>Informações de envio</li>
+              <li>Retornos</li>
+              <li>Como pedir</li>
+              <li>Como rastrear</li>
+              <li>Tabela de tamanhos</li>
+            </ul>
+          </div>
+
+          <div class="links-collun">
+            <h6>Atendimento</h6>
+            
+            <ul>
+              <li>Contate-nos</li>
+              <li>Pagamento</li>
+              <li>Pontos de bônus</li>
+              <li>Noticias</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="networks-section">
+          <div class="network-content">
+            <div class="networks-social">
+              <h6>Redes sociais</h6>
+              
+              <div>
+                <img src="./image/facebook.svg" alt="face-icon">
+                <img src="./image/twitter.svg" alt="twitter-icon">
+                <img src="./image/instagram.svg" alt="instagram-icon">
+                <img src="./image/tiktok.svg" alt="tiktok-icon">
               </div>
             </div>
-            
+
+            <div class="networks-platform">
+              <h6>Plataformas</h6>
+              
+              <div>
+                <img src="./image/android.svg" alt="android-icon">
+                <img src="./image/apple.svg" alt="apple-icon">
+              </div>
+            </div>
           </div>
-        </div>
-        
-      </div>
-      <div class="right-container-modal">
-        <div class="btn-buy">
-          <h2>Valor total do seu pedido:</h2>
-          <span class="total-value">$470,92</span>
-          <button class="complete-purchase">Finalizar compra</button>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-  <!-- end-main-modal -->
 
-  
-  </main>
-  <footer class="footer">
-    <div class="left-container">
-      <div class="info-support-care">
-        <div class="info">
-          <h3>Company Info</h3>
-          <ul>
-            <li>About Laura’s Closet</li>
-            <li>Social Responsibility</li>
-            <li>Affiliate</li>
-            <li>Fashion Blogger</li>
-          </ul>
-        </div>
-        <div class="support">
-          <h3>HElp & Support</h3>
-          <ul>
-            <li>Shipping Info</li>
-            <li>Returns</li>
-            <li>How to Order</li>
-            <li>How to Track</li>
-            <li>Size Chart</li>
-          </ul>
-        </div>
-        <div class="care">
-          <h3>customer care</h3>
-          <ul>
-            <li>Contact Us</li>
-            <li>Payment</li>
-            <li>Bonus Point</li>
-            <li>Notices</li>
-          </ul>
-        </div>
+          <div class="sign-up">
+            <h6>Se inscreva para receber as novidades</h6>
+            <div class="input-email">
+              <input type="email" placeholder="Seu E-mail">
+              <button>Inscreva-se</button>
+            </div>
+            <small>Clicando em INSCREVER você está aceitando nossa <a href="/">Privacidade & Politica de cookies</a> </small>
+          </div>
+        </section>
       </div>
-      <div class="copy-privacy">
-        <p>&copy;2010-2022 Laura’s Closet All Rights Reserved</p>
 
-        <ul class="first-ul">
-          <li>Privacy Center</li>
-          <li>Privacy & Cookie Policy</li>
-          <li>Manage Cookies</li>
-        </ul>
-        <ul class="second-ul">
-          <li>Terms & Conditions</li>
-          <li>Copyright Notice</li>
-          <li>Imprint</li>
-        </ul>
-      </div>
-    </div>
-    <div class="right-container">
-      <div class="socials-platforms">
-        <h3>Socials</h3>
-        <h3>Platforms</h3>
-      </div>
-      <div class="social-icons">
-        <div class="socials">
+      <div class="footer-rows">
+        <section class="rights">
+          <p>©2024 Todos os direitos reservados para DevFahion</p>
+
           <ul>
-            <li>
-              <a href="#"
-                ><img src="src/assets/icons/facebook 1.svg" alt=""
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="src/assets/icons/twitter 1.svg" alt=""
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="src/assets/icons/instagram 1.svg" alt=""
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="src/assets/icons/tiktok 1.svg" alt=""
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="src/assets/icons/snapchat 1.svg" alt=""
-              /></a>
-            </li>
+            <li>Centro de privacidade</li>
+            <li>Privacidade & Politica de Cookies</li>
+            <li>Gerenciamento de Cookies</li>
+            <li>Termos e condições</li>
+            <li>Noticia Copyright</li>
+            <li>Imprimir</li>
           </ul>
+        </section>
+
+        <section class="flags">
+          <h6>Nós aceitamos</h6>
+
+          <div>
+            <img src="./image/f-MasterCard.svg" alt="mastercard-icon">
+            <img src="./image/f-Payoneer.svg" alt="payoneer-icon">
+            <img src="./image/f-eBay.svg" alt="ebay-icon">
+            <img src="./image/f-GooglePay.svg" alt="GooglePay-icon">
+            <img src="./image/f-monobank.svg" alt="monobank-icon">
+            <img src="./image/f-monobank.svg" alt="monobank-icon">
+            <img src="./image/f-Discover.svg" alt="display-icon">
+            <img src="./image/f-Western.svg" alt="western-icon">
+            <img src="./image/f-Payoneer.svg" alt="payoneer-icon">
+            <img src="./image/f-ApplePay.svg" alt="apple-icon">
+            <img src="./image/f-AmericanExpress.svg" alt="american-icon">
+            <img src="./image/f-Amazon.svg" alt="amazon-icon">
+            <img src="./image/f-AliPay.svg" alt="aliPay-icon">
+            <img src="./image/f-BitPay.svg" alt="bitPay-icon">
+            <img src="./image/f-Bitcoin.svg" alt="bitcoin-icon">
         </div>
-        <div class="platforms">
-          <ul>
-            <li>
-              <a href="#"
-                ><img src="src/assets/icons/android.svg" alt=""
-              /></a>
-            </li>
-            <li>
-              <a href="#"><img src="src/assets/icons/ios.svg" alt="" /></a>
-            </li>
-          </ul>
-        </div>
+        </section>
       </div>
-      <!-- envolver em um form -->
-      <div class="subscribe">
-        <h4>SIGN UP FOR Laura’s Closet STYLE NEWS</h4>
-        <div class="input-btn">
-          <input type="email" name="" id="" placeholder="Your email" />
-          <button type="submit">Subscribe</button>
-        </div>
-      </div>
-      <div class="notice">
-        <p>
-          By clicking the SUBSCRIBE button, you are agreeing to our
-          <a href="#">Privacy & Cookie Policy</a>
-        </p>
-      </div>
-      
-      <p class="accept-text">WE ACCEPT</p>
-  <div class="payment-list">
-    
-    <ul>
-      <li>
-        <img
-          src="src/assets/icons/accept-cards-list/masterCard.svg"
-          alt="Descrição 1"
-        />
-      </li>
-      <li>
-        <img
-          src="src/assets/icons/accept-cards-list/payPal.svg"
-          alt="Descrição 1"
-        />
-      </li>
-      <li>
-        <img
-          src="src/assets/icons/accept-cards-list/eBay.svg"
-          alt="Descrição 1"
-        />
-      </li>
-      <li>
-        <img
-          src="src/assets/icons/accept-cards-list/google Pay.svg"
-          alt="Descrição 1"
-        />
-      </li>
-      <li>
-        <img
-          src="src/assets/icons/accept-cards-list/monobank.svg"
-          alt="Descrição 1"
-        />
-      </li>
-      <li>
-        <img
-          src="src/assets/icons/accept-cards-list/discover.svg"
-          alt="Descrição 1"
-        />
-      </li>
-      <li>
-        <img
-          src="src/assets/icons/accept-cards-list/western Union.svg"
-          alt="Descrição 1"
-        />
-      </li>
-      <li>
-        <img
-          src="src/assets/icons/accept-cards-list/payoneer.svg"
-          alt="Descrição 1"
-        />
-      </li>
-      <li>
-        <img
-          src="src/assets/icons/accept-cards-list/applePay.svg"
-          alt="Descrição 1"
-        />
-      </li>
-      <li>
-        <img
-          src="src/assets/icons/accept-cards-list/american Express.svg"
-          alt="Descrição 1"
-        />
-      </li>
-      <li>
-        <img
-          src="src/assets/icons/accept-cards-list/amazon.svg"
-          alt="Descrição 1"
-        />
-      </li>
-      <li>
-        <img
-          src="src/assets/icons/accept-cards-list/aliPay.svg"
-          alt="Descrição 1"
-        />
-      </li>
-      <li>
-        <img
-          src="src/assets/icons/accept-cards-list/bitPay.svg"
-          alt="Descrição 1"
-        />
-      </li>
-      <li>
-        <img
-          src="src/assets/icons/accept-cards-list/bitcoin.svg"
-          alt="Descrição 1"
-        />
-      </li>
-    </ul>
-    </div>
-    </div>
+    </footer>
+    <!-- FIM FOOTER -->
   </div>
-  </footer>
-  
 
-  <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script type="module" src="src/assets/js/main.js"></script>
+  <script src="./script.js"></script>
 </body>
-
-</html>
+</html> 
