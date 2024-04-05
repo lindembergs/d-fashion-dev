@@ -5,7 +5,7 @@
 <br>
 
 <p align="center">
-  <img alt="logo Disney compartilhamento" src="./public/favicon.ico" width="160px">
+  <img alt="logo Dev Fashion compartilhamento" src="./public/favicon.ico" width="160px">
 </p>
 
 <h4 align="center">
