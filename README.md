@@ -75,7 +75,7 @@ Remembering that you need to have a [Figma](http://figma.com/) account to access
 ## :clapper: Demonstration
 
   <div style="display: flex;   flex-direction: column; align-items: center; margin: 15px 0px">
-    <img alt="gif de demonstração" src="./image/Animação.gif" width= "100%"/>    
+    <img alt="gif de demonstração" src="./image/complete-animation.gif" width= "100%"/>
   </div>
 
 ---
